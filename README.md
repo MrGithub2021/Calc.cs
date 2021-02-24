@@ -1,3 +1,3 @@
 # Calc.cs
-This is a calcuator program!
+This is an awesome calcuator program!
 It is written in C#.
