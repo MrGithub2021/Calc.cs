@@ -1,13 +1,11 @@
 name: Greetings
 
-on: [pull_request, issues]
-
+on: [pull_request]
 jobs:
-  greeting:
+ pr-greet:
     runs-on: [ubuntu-latest, windows, macos-latest]
     steps:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Hello User! Welcome to Calc.cs! We really appreciate it that you opened an issue!'
-        pr-message: 'Hello User! Thanks for sending a pull request!'
+        greeting: "Hi **#**! Welcome to calcuator.cs!"
