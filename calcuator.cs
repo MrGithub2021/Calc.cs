@@ -10,7 +10,7 @@ namespace Calculator
             int num1 = 0; int num2 = 0;
 
             // Display title as the C# console calculator app.
-            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("MY Calcuator!\r");
             Console.WriteLine("------------------------\n");
 
             // Ask the user to type the first number.
@@ -27,26 +27,26 @@ namespace Calculator
             Console.WriteLine("\ts - Subtract");
             Console.WriteLine("\tm - Multiply");
             Console.WriteLine("\td - Divide");
-            Console.Write("Your option? ");
+            Console.Write("What is your preferred option? ");
 
             // Use a switch statement to do the math.
             switch (Console.ReadLine())
             {
                 case "a":
-                    Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                    Console.WriteLine($"Your result is: {num1} + {num2} = " + (num1 + num2));
                     break;
                 case "s":
-                    Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                    Console.WriteLine($"Your result is: {num1} - {num2} = " + (num1 - num2));
                     break;
                 case "m":
-                    Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                    Console.WriteLine($"Your result is: {num1} * {num2} = " + (num1 * num2));
                     break;
                 case "d":
-                    Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                    Console.WriteLine($"Your result is: {num1} / {num2} = " + (num1 / num2));
                     break;
             }
             // Wait for the user to respond before closing.
-            Console.Write("Press any key to close the Calculator console app...");
+            Console.Write("Press any key to close the Calculator console app if you were satisfied!");
             Console.ReadKey();
         }
     }
